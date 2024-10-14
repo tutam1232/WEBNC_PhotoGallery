@@ -15,7 +15,7 @@ function PhotoGallery({ photos }) {
             xs={{ flex: "100%" }}
             sm={{ flex: "50%" }}
             md={{ flex: "40%" }}
-            xl={{ flex: "20%" }}
+            xl={{ flex: "19%" }}
           >
             <Link to={RouterUrl.PHOTO.replace(":id", photo?.id)}>
               {/* <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0.5vw"}}>
