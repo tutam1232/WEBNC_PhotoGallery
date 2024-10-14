@@ -7,7 +7,7 @@ const { Meta } = Card;
 
 function PhotoGallery({ photos }) {
   return (
-    <Row>
+    <Row gutter={[10, 10]}>
       {photos.map((photo, index) => {
         return (
           <Col
@@ -24,7 +24,6 @@ function PhotoGallery({ photos }) {
                 </div> */}
               <Card
                 hoverable
-                style={{ margin: "0.5vw" }}
                 cover={<Image src={photo?.urls?.thumb} preview={false} />}
               >
                 <Meta title={photo?.user?.name}></Meta>
